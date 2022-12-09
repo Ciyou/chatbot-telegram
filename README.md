@@ -34,8 +34,11 @@ deno cache --lock=lock.json
 
 ## Usage
 1. Complete Telegram bot token and ChatGPT session token in `env.example`.
-
-    To get your session token, read [Get ChatGPT Session Token](#get-chatgpt-session-token).
+```
+BOT_TOKEN=YOUR_BOT_TOKEN
+SESSION_TOKEN=YOUR_SESSION_TOKEN
+```
+To get your session token, read [Get ChatGPT Session Token](#get-chatgpt-session-token).
 
 2. Rename `env.example` to `.env`
 
