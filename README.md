@@ -44,7 +44,7 @@ deno cache --lock=lock.json
 BOT_TOKEN=YOUR_BOT_TOKEN
 SESSION_TOKEN=YOUR_SESSION_TOKEN
 ```
-To get your session token, read [Get ChatGPT Session Token](#get-chatgpt-session-token).
+To get your session token, see [Get ChatGPT Session Token](#-get-chatgpt-session-token).
 
 2. Rename `env.example` to `.env`
 
