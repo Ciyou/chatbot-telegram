@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Yet another telegram ChatGPT bot which allows you to setup and run your bot with one simple command.
+> Yet another telegram ChatGPT bot which allows you to setup and run your bot with one simple command. PRs and suggestions are welcome. Leave a 🌟 if you find this project helpful.
 
 
 <div  align="center">
