@@ -35,7 +35,7 @@ try {
     await chatGPTAPI.ensureAuth()
     await chatGPTAPI.refreshAccessToken()
 } catch (err) {
-    logWithTime("⛔️ ChatGPT API error:", err)
+    logWithTime("⛔️ ChatGPT API error:", err.message)
     Deno.exit(1)
 }
 logWithTime("🔮 ChatGPT API has started...")
@@ -111,8 +111,8 @@ async function handleMessage(msg: TelegramBot.Message) {
         logWithTime("📨 Response:", response)
     } catch (err) {
         logWithTime("⛔️ ChatGPT API error:", err.message)
-        // 如果错误包含 session token has expired，那么重新获取 session token
-        if (err.message.includes("session token has expired")) {
+        // If the error contains session token has expired, then get a new session token
+        if (err.message.includes("session token may have expired")) {
             bot.sendMessage(chatId, "🔑 Token has expired, please update the token.")
         } else {
             bot.sendMessage(chatId, "🤖 Sorry, I'm having trouble connecting to the server, please try again later.")
