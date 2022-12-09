@@ -11,6 +11,12 @@
 
 > Yet another telegram ChatGPT bot made with `Deno` witch allows you to setup and run your bot with one simple command.
 
+
+<div  align="center">
+<video src="https://user-images.githubusercontent.com/13758730/206657062-eec01c2a-0ef8-4605-b0b9-19a48fff236e.mp4"/>
+</div>
+
+
 ## Features
 - [x] Run your ChatGPT telegram bot with single command.
 - [x] Support group chat by metioning `@` bot while `bot privacy mode` turned off.
