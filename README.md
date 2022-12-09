@@ -55,7 +55,7 @@ deno run --allow-read --allow-env --allow-net chatbot.ts
 ```
 
 ## Credits
-- [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) Node.js client for the unofficial ChatGPT API. - [Lisence](https://github.com/transitive-bullshit/chatgpt-api/blob/main/license)
+- [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) Node.js client for the unofficial ChatGPT API. - [License](https://github.com/transitive-bullshit/chatgpt-api/blob/main/license)
 - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) Telegram Bot API for NodeJS. - [License](https://github.com/yagop/node-telegram-bot-api/blob/master/LICENSE.md)
-- [Lodash](https://github.com/lodash/lodash) - [Lisence](https://github.com/lodash/lodash/blob/master/LICENSE)
+- [Lodash](https://github.com/lodash/lodash) - [License](https://github.com/lodash/lodash/blob/master/LICENSE)
 - One-third of final code & almost all the comments was written by [Github Copilot](https://github.com/features/copilot)👀
