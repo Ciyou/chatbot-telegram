@@ -33,7 +33,9 @@ deno cache --lock=lock.json
 ```
 
 ## Usage
-1. Complete Telegram bot token and ChatGPT session token in `env.example` .
+1. Complete Telegram bot token and ChatGPT session token in `env.example`.
+
+    To get your session token, read [Get ChatGPT Session Token](#get-chatgpt-session-token).
 
 2. Rename `env.example` to `.env`
 
@@ -53,6 +55,15 @@ You can also run with these parammeters to give permission by default.
 ```
 deno run --allow-read --allow-env --allow-net chatbot.ts
 ```
+
+## Get ChatGPT Session Token
+1. Open ChatGPT playground in your browser.
+2. Right click → Inspect → Storage(Safari) / Application(Chrome) → Cookies, find the key `__Secure-next-auth.session-token` and copy the value of it.
+    
+    ![CleanShot 2022-12-09 at 15 34 16@2x](https://user-images.githubusercontent.com/13758730/206649379-10356c45-245e-4fdf-9c44-a83541af1f94.png)
+    
+    This is your session token, keep it safe.
+3. Paste it in your `.env` file.
 
 ## Credits
 - [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) Node.js client for the unofficial ChatGPT API. - [License](https://github.com/transitive-bullshit/chatgpt-api/blob/main/license)
