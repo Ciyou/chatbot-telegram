@@ -17,7 +17,7 @@
 </div>
 
 
-## Features
+## 🪄 Features
 - [x] Run your ChatGPT telegram bot with single command.
 - [x] Support group chat by metioning `@` bot while `bot privacy mode` turned off.
 - [x] Reload conversion with `/reload` command.
@@ -25,7 +25,7 @@
 - [ ] Support multiple conversions, unique for each chatID.
 - [ ] Support login to OpenAI with password.
 
-## Install
+## 💿 Installation
 1. Make sure you have installed `Deno` already. 
 
     If you don't, follow this official document to install. https://deno.land/manual@v1.28.3/getting_started/installation#download-and-install
@@ -38,7 +38,7 @@
 deno cache --lock=lock.json
 ```
 
-## Usage
+## 🔮 Usage
 1. Complete Telegram bot token and ChatGPT session token in `env.example`.
 ```
 BOT_TOKEN=YOUR_BOT_TOKEN
@@ -65,7 +65,7 @@ You can also run with these parammeters to give permission by default.
 deno run --allow-read --allow-env --allow-net chatbot.ts
 ```
 
-## Get ChatGPT Session Token
+## 🔑 Get ChatGPT Session Token
 1. Open ChatGPT playground in your browser.
 2. Right click → Inspect → Storage(Safari) / Application(Chrome) → Cookies, find the key `__Secure-next-auth.session-token` and copy the value of it.
     
@@ -74,8 +74,8 @@ deno run --allow-read --allow-env --allow-net chatbot.ts
     This is your session token, keep it safe.
 3. Paste it in your `.env` file.
 
-## Credits
+## 💌 Credits
 - [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) Node.js client for the unofficial ChatGPT API. - [License](https://github.com/transitive-bullshit/chatgpt-api/blob/main/license)
 - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) Telegram Bot API for NodeJS. - [License](https://github.com/yagop/node-telegram-bot-api/blob/master/LICENSE.md)
 - [Lodash](https://github.com/lodash/lodash) - [License](https://github.com/lodash/lodash/blob/master/LICENSE)
-- One-third of final code & almost all the comments was written by [Github Copilot](https://github.com/features/copilot)👀
+- One-third of final code & almost all the comments was written by [Github Copilot](https://github.com/features/copilot). How far are we from the day where AI build whole project itself with AI 👀
