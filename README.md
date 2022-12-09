@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Yet another telegram ChatGPT bot made with `Deno` witch allows you to setup and run your bot with one simple command.
+> Yet another telegram ChatGPT bot which allows you to setup and run your bot with one simple command.
 
 
 <div  align="center">
