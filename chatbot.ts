@@ -93,10 +93,16 @@ async function handleMessage(msg: TelegramBot.Message) {
     logWithTime(`📩 Message from ${msg.chat.id}:`, message)
 
     // Send a message to the chat acknowledging receipt of their message
-    let respMsg = await bot.sendMessage(chatId, "🤔", {
-        reply_to_message_id: msg.message_id,
-    })
-    bot.sendChatAction(chatId, "typing")
+    let respMsg: TelegramBot.Message
+    try {
+        respMsg = await bot.sendMessage(chatId, "🤔", {
+            reply_to_message_id: msg.message_id,
+        })
+        bot.sendChatAction(chatId, "typing")
+    } catch (err) {
+        logWithTime("⛔️ Telegram API error:", err.message)
+        return
+    }
 
     // Send message to ChatGPT
     try {
@@ -104,7 +110,7 @@ async function handleMessage(msg: TelegramBot.Message) {
             conversationId: conversationID,
             parentMessageId: parentMessageID,
             onProgress: _.throttle(async (partialResponse: ChatMessage) => {
-                respMsg = await editMessage(respMsg, partialResponse.text)
+                respMsg = await editMessage(respMsg, partialResponse.text, false)
                 bot.sendChatAction(chatId, "typing")
             }, 4000, { leading: true, trailing: false }),
         })
