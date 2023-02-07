@@ -42,7 +42,7 @@ deno cache --lock=lock.json
 1. Complete Telegram bot token and ChatGPT session token in `env.example`.
 ```
 BOT_TOKEN=YOUR_BOT_TOKEN
-SESSION_TOKEN=YOUR_SESSION_TOKEN
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 ```
 To get your session token, see [Get ChatGPT Session Token](#-get-chatgpt-session-token).
 
@@ -65,13 +65,11 @@ You can also run with these parammeters to give permission by default.
 deno run --allow-read --allow-env --allow-net chatbot.ts
 ```
 
-## 🔑 Get ChatGPT Session Token
-1. Open ChatGPT playground in your browser.
-2. Right click → Inspect → Storage(Safari) / Application(Chrome) → Cookies, find the key `__Secure-next-auth.session-token` and copy the value of it.
-    
-    ![CleanShot 2022-12-09 at 15 34 16@2x](https://user-images.githubusercontent.com/13758730/206649379-10356c45-245e-4fdf-9c44-a83541af1f94.png)
-    
-    This is your session token, keep it safe.
+## 🔑 Get OpenAI API Key
+1. Sign up for an OpenAI account at https://beta.openai.com/signup
+
+2. Generate a new API key at https://platform.openai.com/account/api-keys. This is your API key, anyone can use it to access your account which may cause unexpected charges. Keep it secret!
+
 3. Paste it in your `.env` file.
 
 ## 💌 Credits
