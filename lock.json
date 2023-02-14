@@ -7,8 +7,8 @@
   },
   "npm": {
     "specifiers": {
-      "@types/node-telegram-bot-api@^0.57.6": "@types/node-telegram-bot-api@0.57.6",
-      "chatgpt@^4.1.3": "chatgpt@4.1.3",
+      "@types/node-telegram-bot-api@^0.57.6": "@types/node-telegram-bot-api@0.57.7",
+      "chatgpt@4.4.0": "chatgpt@4.4.0",
       "lodash@^4.17.21": "lodash@4.17.21",
       "node-telegram-bot-api@^0.60.0": "node-telegram-bot-api@0.60.0_request@2.88.2"
     },
@@ -17,8 +17,8 @@
         "integrity": "sha512-6ckxMjBBD8URvjB6J3NcnuAn5Pkl7t3TizAg+xdlzzQGSPSmBcXf8KoIH0ua/i+tio+ZRUHEXp0HEmvaR4kt0w==",
         "dependencies": {}
       },
-      "@types/node-telegram-bot-api@0.57.6": {
-        "integrity": "sha512-hN1Ad4EntuTFZjKfRgfv8812RUk3dBRXUBH8D3NWws3t3U4J0Bep9l6hI+GYxL9B49E1Wd+mhJv85ducpjFVKQ==",
+      "@types/node-telegram-bot-api@0.57.7": {
+        "integrity": "sha512-Hy+oFlA5RzhnK3geCazzgZgrpGiVCTgO7wJEzt6RukWovBkM0zpsUmE7yOt97QzAuJElCEldxDr42waIaxL9kQ==",
         "dependencies": {
           "@types/node": "@types/node@18.13.0",
           "@types/request": "@types/request@2.48.8"
@@ -54,7 +54,7 @@
         "integrity": "sha512-tMj4uTmGpaGUh4XFMUh3H7KYAIqlygrlXchOEVTiICbTwRwMhDqtzsOwvtI+WAf1GdjJBeIP3Bu92Qg0SnXdtA==",
         "dependencies": {
           "call-bind": "call-bind@1.0.2",
-          "define-properties": "define-properties@1.1.4",
+          "define-properties": "define-properties@1.2.0",
           "es-abstract": "es-abstract@1.21.1",
           "es-shim-unscopables": "es-shim-unscopables@1.0.0"
         }
@@ -109,13 +109,13 @@
         "integrity": "sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==",
         "dependencies": {}
       },
-      "chatgpt@4.1.3": {
-        "integrity": "sha512-8i4qo2rWwK8SsDO3T8GU6w465RkajXcntpF7ocA/IEG92i87hLbikl/W3TLJ77UbLesh/FrXruyJUtptEIZr4Q==",
+      "chatgpt@4.4.0": {
+        "integrity": "sha512-rS1F423hR5marIB7hvZ4KyczK9oFloWY+AR4WKIt+HLyiRgOOWv6V4olu1HvaoOayc5+A/N2WwX0SzuU1rI9Rg==",
         "dependencies": {
           "eventsource-parser": "eventsource-parser@0.0.5",
           "gpt-3-encoder": "gpt-3-encoder@1.1.4",
           "keyv": "keyv@4.5.2",
-          "p-timeout": "p-timeout@6.1.0",
+          "p-timeout": "p-timeout@6.1.1",
           "quick-lru": "quick-lru@6.1.1",
           "uuid": "uuid@9.0.0"
         }
@@ -140,8 +140,8 @@
         "integrity": "sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==",
         "dependencies": { "ms": "ms@2.1.3" }
       },
-      "define-properties@1.1.4": {
-        "integrity": "sha512-uckOqKcfaVvtBdsVkdPv3XjveQJsNQqmhXgRi8uhvWWuPYZCNlzT8qAyblUgNoXdHdjMTzAqeGjAoli8f+bzPA==",
+      "define-properties@1.2.0": {
+        "integrity": "sha512-xvqAVKGfT1+UAvPwKTVw/njhdQ8ZhXK4lI0bCIuCMrp2up9nPnaDftrLtmpTazqd1o+UY4zgzU+avtMbDP+ldA==",
         "dependencies": {
           "has-property-descriptors": "has-property-descriptors@1.0.0",
           "object-keys": "object-keys@1.1.1"
@@ -179,7 +179,7 @@
           "has-property-descriptors": "has-property-descriptors@1.0.0",
           "has-proto": "has-proto@1.0.1",
           "has-symbols": "has-symbols@1.0.3",
-          "internal-slot": "internal-slot@1.0.4",
+          "internal-slot": "internal-slot@1.0.5",
           "is-array-buffer": "is-array-buffer@3.0.1",
           "is-callable": "is-callable@1.2.7",
           "is-negative-zero": "is-negative-zero@2.0.2",
@@ -280,7 +280,7 @@
         "integrity": "sha512-uN7m/BzVKQnCUF/iW8jYea67v++2u7m5UgENbHRtdDVclOUP+FMPlCNdmk0h/ysGyo2tavMJEDqJAkJdRa1vMA==",
         "dependencies": {
           "call-bind": "call-bind@1.0.2",
-          "define-properties": "define-properties@1.1.4",
+          "define-properties": "define-properties@1.2.0",
           "es-abstract": "es-abstract@1.21.1",
           "functions-have-names": "functions-have-names@1.2.3"
         }
@@ -310,7 +310,7 @@
       },
       "globalthis@1.0.3": {
         "integrity": "sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==",
-        "dependencies": { "define-properties": "define-properties@1.1.4" }
+        "dependencies": { "define-properties": "define-properties@1.2.0" }
       },
       "gopd@1.0.1": {
         "integrity": "sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==",
@@ -367,8 +367,8 @@
         "integrity": "sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==",
         "dependencies": {}
       },
-      "internal-slot@1.0.4": {
-        "integrity": "sha512-tA8URYccNzMo94s5MQZgH8NB/XTa6HsOo0MLfXTKKEnHVVdegzaQoFZ7Jp44bdvLvY2waT5dc+j5ICEswhi7UQ==",
+      "internal-slot@1.0.5": {
+        "integrity": "sha512-Y+R5hJrzs52QCG2laLn4udYVnxsfny9CpOhNhUvk/SSSVyF6T27FzRbF0sroPidSu3X8oEAkOn2K804mjpt6UQ==",
         "dependencies": {
           "get-intrinsic": "get-intrinsic@1.2.0",
           "has": "has@1.0.3",
@@ -538,7 +538,7 @@
         "integrity": "sha512-1mxKf0e58bvyjSCtKYY4sRe9itRk3PJpquJOjeIkz885CczcI4IvJJDLPS72oowuSh+pBxUFROpX+TU++hxhZQ==",
         "dependencies": {
           "call-bind": "call-bind@1.0.2",
-          "define-properties": "define-properties@1.1.4",
+          "define-properties": "define-properties@1.2.0",
           "has-symbols": "has-symbols@1.0.3",
           "object-keys": "object-keys@1.1.1"
         }
@@ -547,8 +547,8 @@
         "integrity": "sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==",
         "dependencies": { "wrappy": "wrappy@1.0.2" }
       },
-      "p-timeout@6.1.0": {
-        "integrity": "sha512-s0y6Le9QYGELLzNpFIt6h8B2DHTVUDLStvxtvRMSKNKeuNVVWby2dZ+pIJpW4/pWr5a3s8W85wBNtc0ZA+lzCg==",
+      "p-timeout@6.1.1": {
+        "integrity": "sha512-yqz2Wi4fiFRpMmK0L2pGAU49naSUaP23fFIQL2Y6YT+qDGPoFwpvgQM/wzc6F8JoenUkIlAFa4Ql7NguXBxI7w==",
         "dependencies": {}
       },
       "performance-now@2.1.0": {
@@ -598,7 +598,7 @@
         "integrity": "sha512-fjggEOO3slI6Wvgjwflkc4NFRCTZAu5CnNfBd5qOMYhWdn67nJBBu34/TkD++eeFmd8C9r9jfXJ27+nSiRkSUA==",
         "dependencies": {
           "call-bind": "call-bind@1.0.2",
-          "define-properties": "define-properties@1.1.4",
+          "define-properties": "define-properties@1.2.0",
           "functions-have-names": "functions-have-names@1.2.3"
         }
       },
@@ -694,7 +694,7 @@
         "integrity": "sha512-JySq+4mrPf9EsDBEDYMOb/lM7XQLulwg5R/m1r0PXEFqrV0qHvl58sdTilSXtKOflCsK2E8jxf+GKC0T07RWwQ==",
         "dependencies": {
           "call-bind": "call-bind@1.0.2",
-          "define-properties": "define-properties@1.1.4",
+          "define-properties": "define-properties@1.2.0",
           "es-abstract": "es-abstract@1.21.1"
         }
       },
@@ -702,7 +702,7 @@
         "integrity": "sha512-omqjMDaY92pbn5HOX7f9IccLA+U1tA9GvtU4JrodiXFfYB7jPzzHpRzpglLAjtUV6bB557zwClJezTqnAiYnQA==",
         "dependencies": {
           "call-bind": "call-bind@1.0.2",
-          "define-properties": "define-properties@1.1.4",
+          "define-properties": "define-properties@1.2.0",
           "es-abstract": "es-abstract@1.21.1"
         }
       },

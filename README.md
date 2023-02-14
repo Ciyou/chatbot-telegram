@@ -11,6 +11,9 @@
 
 > Yet another telegram ChatGPT bot which allows you to setup and run your bot with one simple command. PRs and suggestions are welcome. Leave a 🌟 if you find this project helpful.
 
+> ⚠️ Warning: The underlying model is currently `text-davinci-003`, which is not fine-tuned for conversation and **costs money**. *A new OpenAI account comes with $18 free credit though, which is enough to run this bot for some time.*
+
+> Support for using a reverse proxy to access the origin ChatGPT will be added soon.
 
 <div  align="center">
 <video src="https://user-images.githubusercontent.com/13758730/206657062-eec01c2a-0ef8-4605-b0b9-19a48fff236e.mp4"/>
@@ -35,7 +38,7 @@
 3. Cache dependencies and check integrity with `lock.json`, *you only need to do this once*.
 
 ```
-deno cache --lock=lock.json
+deno cache --lock=lock.json chatbot.ts
 ```
 
 ## 🔮 Usage

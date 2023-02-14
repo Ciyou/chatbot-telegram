@@ -1,6 +1,6 @@
 
 import _ from "npm:lodash@^4.17.21"
-import { ChatGPTAPI, ChatMessage } from "npm:chatgpt@^4.1.3"
+import { ChatGPTAPI, ChatMessage } from "npm:chatgpt@4.4.0"
 // @deno-types="npm:@types/node-telegram-bot-api@^0.57.6"
 import TelegramBot from "npm:node-telegram-bot-api@^0.60.0"
 
