@@ -47,16 +47,19 @@ bot.on("message", async (msg) => {
 })
 
 function handleCommand(msg: TelegramBot.Message): boolean {
+    const trimedText = msg.text?.replace(`@${botName}`, "").trim()
+
     // reload command
-    if (msg.text === "/reload") {
+    if (trimedText === "/reload" || trimedText == "/reset") {
         conversationID = undefined
         parentMessageID = undefined
         bot.sendMessage(msg.chat.id, "🔄 Conversation has been reset, enjoy!")
-        logWithTime("🔄 Conversation has been reset, new conversation id")
+        logWithTime("🔄 Conversation has been reset")
         return true
     }
+
     // help command
-    if (msg.text === "/help") {
+    if (trimedText === "/help") {
         bot.sendMessage(msg.chat.id, "🤖 This is a chatbot powered by ChatGPT. You can use the following commands:\n\n/reload - Reset the conversation\n/help - Show this message")
         return true
     }
@@ -71,22 +74,22 @@ async function handleMessage(msg: TelegramBot.Message) {
         return
     }
 
-    // Only respond to messages that start with @botName in a group chat
+    // Only respond to messages that start with @botName or a valid command in a group chat
     if (msg.chat.type === "group" || msg.chat.type === "supergroup") {
         if (!msg.text.startsWith(`@${botName}`)) {
+            handleCommand(msg)
             return
         }
-    }
-    
-
-    // Remove @botName from message
-    const message = msg.text.replace(`@${botName}`, "").trim()
-    if (message === "") {
-        return
     }
 
     // Handle commands if needed
     if (handleCommand(msg)) {
+        return
+    }
+
+    // Remove @botName from message
+    const message = msg.text.replace(`@${botName}`, "").trim()
+    if (message === "") {
         return
     }
 
