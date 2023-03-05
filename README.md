@@ -11,7 +11,7 @@
 
 > Yet another telegram ChatGPT bot which allows you to setup and run your bot with one simple command. PRs and suggestions are welcome. Leave a 🌟 if you find this project helpful.
 
-> ⚠️ Warning: The underlying model is currently `text-davinci-003`, which is not fine-tuned for conversation and **costs money**. *A new OpenAI account comes with $18 free credit though, which is enough to run this bot for some time.*
+> ⚠️ Warning: The underlying model is currently `gpt-3.5-turbo`, which is already fine-tuned for conversation **but costs money**. *A new OpenAI account comes with $18 free credit though, which is enough to run this bot for some time.*
 
 > Support for using a reverse proxy to access the origin ChatGPT will be added soon.
 
